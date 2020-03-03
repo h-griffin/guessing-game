@@ -4,65 +4,65 @@ var name = prompt('what is your name?');
 alert('hello, ' + name + ' welcome to my page.');
 
 
-var tree = prompt('is a tree a plant?');
-console.log(tree);
-var tree = tree.toUpperCase();
+var griffin = prompt('is my name griffin?');
+console.log(griffin);
+var griffin = griffin.toUpperCase();
 // console.log(tree);
 // .tolowercase(tree);
 // console.log(tree);
-if (tree == 'yes'){
-    alert('yes, a tree is a plant');
-} else if (tree == 'no') {
-    alert('no, a tree is a plant');
+if (grifcpc == 'yes'){
+    alert('yes, griffins name is griffin');
+} else if (griffin == 'no') {
+    alert('no, griffins name is griffin');
 } else {
-    tree = prompt('please answer the question');
+    griffin = prompt('please answer the question');
 }
 
-var dog = prompt('is a dog an animal?');
+var cpc = prompt('did griffin go to cedar park?');
 // console.log(dog);
-var dog = dog.toUpperCase();
+var cpc = cpc.toUpperCase();
 // console.log(dog);
-if (dog == 'yes'){
-    alert('yes, a dog is an animal');
-} else if (dog == 'no'){
-    alert('no, a dog is an animal');
+if (cpc == 'yes'){
+    alert('yes, griffin went to cedar park');
+} else if (cpc == 'no'){
+    alert('no, griffin went to cedar park');
 } else {
     prompt('please answer the question');
 }
 
 
-var sport = prompt('is hockey a sport?');
+var job = prompt('is griffin a dogsitter');
 // console.log(sport);
-var sport = sport.toUpperCase();
+var job = job.toUpperCase();
 // console.log(sport);
-if (sport == 'yes'){
-    alert('yes, hockey is a sport');
-}else if (sport == 'no'){
-    alert('no, a hockey is a sport');
+if (job == 'yes'){
+    alert('yes, griffin is a dogsitter');
+}else if (job == 'no'){
+    alert('acs griffin is a dogsitter');
 } else {
     prompt('please answer the question');
 }
 
-var sun = prompt('is the sun hot?');
+var acs = prompt('does griffin voulenteer for acs?');
 // console.log(sun);
-var sun = sun.toUpperCase
+var acs = acs.toUpperCase
 // console.log(sun);
-if (sun == 'yes'){
-    alert('yes, the sun is hot');
-} else if (sun == 'no'){
-    alert('no, the sun is hot');
+if (acs == 'yes'){
+    alert('yes, griffin voulenteers for acs');
+} else if (acs == 'no'){
+    alert('no, griffin voulenteers for acs');
 } else {
     prompt('please answer the question');
 }
 
-var water = prompt('is boiling water hot?');
+var tech = prompt('is griffgriffin is interested in tech?');
 // console.log(water);
-var water = water.toUpperCase();
+var tech = tech.toUpperCase();
 // console.log(water);
-if (water == 'yes'){
-    alert('yes, ' + name + ' boiling water is hot');
-} else if (water == 'no'){
-    alert('no, ' + name + 'boiling water is hot');
+if (tech == 'yes'){
+    alert('yes, ' + name + ' griffin is interested in tech');
+} else if (tech == 'no'){
+    alert('no, ' + name + ' griffin is interested in tech');
 } else {
     prompt('please answer the question' + name );
 }
