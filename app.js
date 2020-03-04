@@ -74,13 +74,13 @@ console.log(isNaN(movieNumber));
 var correct = 10;
 
 if (movieNumber > correct){
-    document.write('you number is too high');
+    alert('you number is too high');
 } else if (movieNumber < correct){
-    document.write('your number is too low');
+    alert('your number is too low');
 } else if (movieNuber === correct){
-    document.write('you are correct!');
+    alert('you are correct!');
 } else {
-    document.write('invalid imput');
+    alert('invalid imput');
 }
 
 switch (correct){
@@ -98,3 +98,4 @@ switch (correct){
         break;
     case correct:
 }
+
