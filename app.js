@@ -5,7 +5,7 @@ alert('hello, ' + name + ' welcome to my page.');
 
 
 var griffin = prompt('is my name griffin?');
-console.log(griffin);
+// console.log(griffin);
 var griffin = griffin.toUpperCase();
 // console.log(tree);
 // .tolowercase(tree);
@@ -65,4 +65,36 @@ if (tech == 'yes'){
     alert('no, ' + name + ' griffin is interested in tech');
 } else {
     prompt('please answer the question' + name );
+}
+
+var movieNumber = prompt('how many movies are on griffins movie list?');
+console.log(movieNumber);
+var movieNumber = Number(movieNumber);
+console.log(isNaN(movieNumber));
+var correct = 10;
+
+if (movieNumber > correct){
+    document.write('you number is too high');
+} else if (movieNumber < correct){
+    document.write('your number is too low');
+} else if (movieNuber === correct){
+    document.write('you are correct!');
+} else {
+    document.write('invalid imput');
+}
+
+switch (correct){
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+        document.write('your number is too low');
+        break;
+    case correct:
 }
