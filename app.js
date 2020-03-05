@@ -142,7 +142,7 @@ for (var i = 0; i <4; i++){
         prompt('your number is too high, guess again');
     } else if (movieNumber < correct){
         prompt('your number is too low, guess again');
-    } else if (movieNuber === correct){
+    } else if (movieNumber === correct){
         alert('correct!');
     // } else if (movieNumber !== correct);{
     //     prompt('incorrect.');
@@ -153,15 +153,24 @@ for (var i = 0; i <4; i++){
 console.log(movieNumber);
 
 var color = prompt('what is one of the primary colors?');
+var color = color.toLowerCase;
 var correct = ['red', 'yellow', 'blue'];
 
-for (var i = 0; i < color.length; i++);
-    // if (color === correct) break;
-    if (color !== correct) {
-        console.log('incorrect!');
-    // } else if (colors[i][0] === 'y'){
-    //     console.log('thats yellow which starts with y');
+for (var i = 0; i < 6; i++);{
+    if (color === correct) {
+        alert('correct!');
     }
+    if (color !== correct) {
+        alert('incorrect!');
+    } 
+}
+document.write('the three primary colors are: red, yellow, and blue.');
+
+//not sure how to keep score
+
+// } else if (colors[i][0] === 'y'){
+    //     console.log('thats yellow which starts with y');
+    
 
 // while(movieNumber != correct){
 //     alert('incorrect')

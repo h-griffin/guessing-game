@@ -10,7 +10,21 @@ title {
 
 body{
     color: green;
-    background-color: yellow;
+    background-color: lightblue;
     text-align: center;
 }
+h1{
+    color: black;
+    background-color: lightslategray;
+}
 
+h2{
+    color: black;
+    background-color: grey;
+}
+
+p, ol, ul{
+    text-align: center;
+    color: black;
+    background-color: lightgray;
+}
