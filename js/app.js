@@ -196,7 +196,51 @@ loop1: for (attempts = 0; attempts < 6; attempts++);{
 
 alert('thanks for playing, ' + name + 'your final game score is ' + userScore);
 
-//not sure how to keep score
+//old question 
+// var answer1 = prompt('do i like to drive?');
+// var answer = 'yes';
+// answer1 = answer1.toLowerCase
+// if(answer1 === correct){
+//   alert('correct!');
+// } else {
+//   alert('wrong.');
+// }
+
+//new way to question
+function askQuestion(questoin, correct){
+  var answer = prompt(question);
+  if (answer === correct){
+    alert('correct');
+  } else {
+    alert('wrong');
+  }
+}
+
+function askMultipleQuestion(question, correctArray, attempts){
+  var answerCorrectly = false;
+  attemptsloop: while (attempt > 0 && answerCorrectly === false){
+    var answer = prompt(question);
+    attempt--;
+
+    for(var i = 0; i <correctArray.length; i++){
+        if (answer === correctArray[i]){
+          alert('corect');
+          break attemptsloop;
+          // attempts = =0;
+        }
+    }
+
+    if (answercorrectly == false) alert('sorry try again.');
+  }
+}
+
+askQuestion('question one');
+askQuestion('question two');
+askMultipleQuestion(
+  'what is color of rainbow',
+  ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'],
+  4
+);
 
 // } else if (colors[i][0] === 'y'){
     //     console.log('thats yellow which starts with y');
