@@ -2,8 +2,7 @@
 
 var name = prompt('what is your name?');
 alert('hello, ' + name + ' welcome to my page.');
-
-
+console.log(name);
 // var griffin = prompt('is my name griffin?');
 // // console.log(griffin);
 // var griffin = griffin.toUpperCase();
@@ -18,16 +17,19 @@ alert('hello, ' + name + ' welcome to my page.');
 // // } else {
 // //      griffin= prompt('please answer the question');
 // }
-var griffin = prompt('Welcome to my page, ' + name + '! is the authors name griffin?');
+var griffin = prompt('Welcome, ' + name + '! is the authors name griffin?');
+console.log(griffin);
 var griffin = griffin.toLowerCase();
+console.log(griffin);
 while ( griffin !== "yes" && griffin !== "no" ) {
-  griffin = prompt('Please answer with a yes or a no');
+  griffin = prompt('yes or no');
 }
   if (griffin === 'yes') {
-  alert('That is correct!');
+  alert('correct!');
 } else if (griffin === 'no') {
-  alert('You are wrong!');
+  alert('incorrect!');
 }
+console.log(griffin);
 
 // var cpc = prompt('did griffin go to cedar park?');
 // // console.log(dog);
@@ -41,15 +43,18 @@ while ( griffin !== "yes" && griffin !== "no" ) {
 // //     prompt('please answer the question');
 // }
 var cpc = prompt('did griffin go to cedar park?');
+console.log(cpc);
 var cpc = cpc.toLowerCase();
+console.log(cpc);
 while ( cpc !== "yes" && cpc !== "no" ) {
-  cpc = prompt( 'yes or no');
+  cpc = prompt('yes or no');
 }
   if (cpc === 'yes') {
-  alert('That is correct!');
+  alert('correct!');
 } else if (cpc === 'no') {
-  alert('You are wrong!');
+  alert('incorrect!');
 }
+console.log(cpc);
 
 // var job = prompt('is griffin a dogsitter');
 // // console.log(sport);
@@ -63,15 +68,18 @@ while ( cpc !== "yes" && cpc !== "no" ) {
 // //     prompt('please answer the question');
 // }
 var job = prompt('is griffin a dogsitter?');
+console.log(job);
 var job = job.toLowerCase();
+console.log(job);
 while ( job !== "yes" && job !== "no" ) {
   job = prompt('yes or a no');
 }
   if (job === 'yes') {
-  alert('That is correct!');
+  alert('correct!');
 } else if (job === 'no') {
-  alert('You are wrong!')
+  alert('incorrect!')
 }
+console.log(job);
 
 // var acs = prompt('does griffin voulenteer for acs?');
 // // console.log(sun);
@@ -84,16 +92,19 @@ while ( job !== "yes" && job !== "no" ) {
 // // } else {
 // //     prompt('please answer the question');
 // }
-var acs = prompt('does griffin voulenteer for acs?')
+var acs = prompt('does griffin voulenteer for acs?');
+console.log(acs);
 var acs = acs.toLowerCase();
+console.log(acs);
 while ( acs !== "yes" && acs !== "no" ) {
-  acs = prompt( 'yes or no');
+  acs = prompt('yes or no');
 }
   if (acs === 'yes') {
-  alert('That is correct!');
+  alert('correct!');
 } else if (acs === 'no') {
-  alert('You are wrong!');
+  alert('incorrect!');
 }
+console.log(acs);
 
 // var tech = prompt('is griffin is interested in tech?');
 // // console.log(water);
@@ -107,42 +118,50 @@ while ( acs !== "yes" && acs !== "no" ) {
 // //     prompt('please answer the question' + name );
 // }
 var tech = prompt('is griffin interested in tech?');
+console.log(tech);
 var tech = tech.toLowerCase();
+console.log(tech);
 while ( tech !== "yes" && tech !== "no" ) {
-  tech = prompt( 'yes or no');
+  tech = prompt('yes or no');
 }
   if (tech === 'yes') {
-  alert('That is correct!');
+  alert('correct!');
 } else if (tech === 'no') {
-  alert('You are wrong!');
+  alert('incorrect!');
 }
+console.log(tech);
 
 var movieNumber = prompt('how many movies are on griffins movie list?');
 console.log(movieNumber);
 var movieNumber = Number(movieNumber);
 console.log(isNaN(movieNumber));
 var correct = 10;
-
-
 for (var i = 0; i <4; i++){
-    if (movieNumber == correct) break;
+    if (movieNumber === correct) break;
     if (movieNumber > correct){
-        prompt('you number is too high');
-        
+        prompt('your number is too high, guess again');
     } else if (movieNumber < correct){
-        prompt('your number is too low');
-        
-    } else if (movieNuber == correct){
-        alert('you are correct!');
-        
-    } else {
-        prompt('invalid imput');
-        
+        prompt('your number is too low, guess again');
+    } else if (movieNuber === correct){
+        alert('correct!');
+    // } else if (movieNumber !== correct);{
+    //     prompt('incorrect.');
+    // } else {
+    //     prompt('invalid imput');
     }
 }
+console.log(movieNumber);
 
-var color = ['red', 'yellow', 'blue'];
+var color = prompt('what is one of the primary colors?');
+var correct = ['red', 'yellow', 'blue'];
 
+for (var i = 0; i < color.length; i++);
+    // if (color === correct) break;
+    if (color !== correct) {
+        console.log('incorrect!');
+    // } else if (colors[i][0] === 'y'){
+    //     console.log('thats yellow which starts with y');
+    }
 
 // while(movieNumber != correct){
 //     alert('incorrect')
