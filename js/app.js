@@ -1,8 +1,9 @@
-'use strict'
+'use strict'; 
 
 var name = prompt('what is your name?');
 alert('hello, ' + name + ' welcome to my page.');
 console.log(name);
+var userScore = 0;
 // var griffin = prompt('is my name griffin?');
 // // console.log(griffin);
 // var griffin = griffin.toUpperCase();
@@ -26,6 +27,7 @@ while ( griffin !== "yes" && griffin !== "no" ) {
 }
   if (griffin === 'yes') {
   alert('correct!');
+  userScore++;
 } else if (griffin === 'no') {
   alert('incorrect!');
 }
@@ -51,6 +53,7 @@ while ( cpc !== "yes" && cpc !== "no" ) {
 }
   if (cpc === 'yes') {
   alert('correct!');
+  userScore++;
 } else if (cpc === 'no') {
   alert('incorrect!');
 }
@@ -76,6 +79,7 @@ while ( job !== "yes" && job !== "no" ) {
 }
   if (job === 'yes') {
   alert('correct!');
+  userScore++;
 } else if (job === 'no') {
   alert('incorrect!')
 }
@@ -101,6 +105,7 @@ while ( acs !== "yes" && acs !== "no" ) {
 }
   if (acs === 'yes') {
   alert('correct!');
+  userScore++;
 } else if (acs === 'no') {
   alert('incorrect!');
 }
@@ -126,24 +131,35 @@ while ( tech !== "yes" && tech !== "no" ) {
 }
   if (tech === 'yes') {
   alert('correct!');
+  userScore++;
 } else if (tech === 'no') {
   alert('incorrect!');
 }
 console.log(tech);
 
+// question 6 guess number
 var movieNumber = prompt('how many movies are on griffins movie list?');
 console.log(movieNumber);
 var movieNumber = Number(movieNumber);
 console.log(isNaN(movieNumber));
 var correct = 10;
-for (var i = 0; i <4; i++){
-    if (movieNumber === correct) break;
-    if (movieNumber > correct){
-        prompt('your number is too high, guess again');
+var tries;
+
+for (var tries = 1; tries <= 4; tries++){
+    console.log(tries);
+    movieNumber = Number(movieNumber);
+    if (movieNumber === correct){
+      alert('correct!');
+      console.log(movieNumber);
+     break;
+    } else if (movieNumber > correct){
+        // prompt('your number is too high, guess again');
+        movieNumber= prompt('your number is too high, guess again');
     } else if (movieNumber < correct){
-        prompt('your number is too low, guess again');
+        movieNumber = prompt('your number is too low, guess again');
     } else if (movieNumber === correct){
-        alert('correct!');
+        movieNuber = alert('correct!');
+        userScore++;
     // } else if (movieNumber !== correct);{
     //     prompt('incorrect.');
     // } else {
@@ -152,19 +168,33 @@ for (var i = 0; i <4; i++){
 }
 console.log(movieNumber);
 
-var color = prompt('what is one of the primary colors?');
-var color = color.toLowerCase;
+//question 7 multiple correct answers
+// var color = prompt('what is one of the primary colors?');
+// var color = color.toLowerCase;
 var correct = ['red', 'yellow', 'blue'];
+var attempts = 6;
 
-for (var i = 0; i < 6; i++);{
-    if (color === correct) {
-        alert('correct!');
-    }
-    if (color !== correct) {
-        alert('incorrect!');
+//nested loop using label
+loop1: for (attempts = 0; attempts < 6; attempts++);{
+  var color = prompt('what is one of the primary colors?');
+  loop2: for(var correctIndex = 0; correctIndex < correct.length; correctIndex++){
+    color = color.toLowerCase();
+    if (color === correct[correctIndex]) {
+      console.log(color);
+      alert('correct!');
+      break loop1;
+    // } else if (color !== correct) {
+    //     alert('incorrect!');
+    // } else { 
+    //   alert('incorrect!');
+    //   // color = prompt('guess again');
     } 
+  }
+  if(attempts < 6) alert('incorrect.');
 }
-document.write('the three primary colors are: red, yellow, and blue.');
+// document.write('the three primary colors are: red, yellow, and blue.');
+
+alert('thanks for playing, ' + name + 'your final game score is ' + userScore);
 
 //not sure how to keep score
 
@@ -199,5 +229,3 @@ document.write('the three primary colors are: red, yellow, and blue.');
 // //         document.write('your number is too low');
 // //         break;
 // //     case correct:
-// // }
-
