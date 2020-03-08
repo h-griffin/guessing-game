@@ -1,4 +1,4 @@
-head{
+header{
     background-color: aqua;
 }
 
@@ -10,7 +10,7 @@ title {
 
 body{
     color: green;
-    background-color: lightblue;
+    background-color: antiquewhite;
     text-align: center;
 }
 h1{

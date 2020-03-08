@@ -8,5 +8,9 @@ added 5 questions in js about bio in html and a greeting.
 ### 04 march 2020
 added css and oe html, added un/ordered lists, added one question with number answer, and a question with more than one correct answer. unsure how to keep score of correct and incorrect answers. 
 
-## lab-04
+## lab-04 w ryan
 ### 05 march 2020
+converted questions into functions. 
+
+# lab-05 w 
+### 06 march 2020
