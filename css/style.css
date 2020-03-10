@@ -23,8 +23,20 @@ h2{
     background-color: grey;
 }
 
-p, ol, ul{
-    text-align: center;
+ol, ul{
+    text-align: left;
     color: black;
     background-color: lightgray;
+}
+
+p {text-align: center;
+color: black;
+background-color: lightgray;
+}
+
+article {
+    display: inline-block;
+    height: 100px;
+    background-color: aqua;
+    border: black, thick, solid;
 }

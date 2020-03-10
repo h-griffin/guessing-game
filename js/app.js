@@ -1,12 +1,11 @@
 'use strict'; 
-
+//name prompt
 var name = prompt('what is your name?');
 alert('hello, ' + name + ' welcome to my page.');
-console.log(name);
 
 var userScore = 0;
 
-//new way to question
+//function question
 function askQuestion(question, correct){
   var answer = prompt(question);
   if (answer === correct){
@@ -15,21 +14,25 @@ function askQuestion(question, correct){
     alert('wrong');
   }
 }
-
+ //5 yes or no
 askQuestion('Welcome, ' + name + '! is the authors name griffin?', 'yes')
 askQuestion('did griffin go to cedar park?', 'yes')
 askQuestion('is griffinf a dog sitter?', 'yes')
 askQuestion('does griffin voulonteer for acs?', 'yes')
 askQuestion('is griffin interested in tech?', 'yes')
 
+//number question 6 with 4 attempts
+// var attempt = 4;
 
-
+//question to ask / correct number answer / number of attempts
 function askNumberquestion(question, correctNumber, attempt) {
   var answeredCorrectly = false;
+
   loopattempt:while(attempt > 0 && answeredCorrectly === false){
     var answer = prompt(question); 
     attempt--;
-    for (var i = 0; i != 6, i++;){
+
+    checkloop: for (var i = 0; i != 6, i++;){
       if (Number(answer) === correctNumber){
         alert('correct');
         answeredCorrectly = true; 
@@ -42,22 +45,22 @@ function askNumberquestion(question, correctNumber, attempt) {
   }
 }
 
-
+//question to ask / correct number answer / number of attempts
 askNumberquestion(
   'how many movies are on the list?',
   10,
   4
 )
 
-
-
+//multiple coorect for question 7 with 6 attempts
 function askMultipleQuestion(question, correctArray, attempts){
   var answerCorrectly = false;
-  while (attempt > 0 && answerCorrectly === false){
+
+  attemptsloop: while (attempt > 0 && answerCorrectly === false){
     var answer = prompt(question).toLowerCase();
     attempt--;
 
-    for(var i = 0; i < correctArray.length; i++){
+    loopcheck: for(var i = 0; i < correctArray.length; i++){
         if (answer === correctArray[i]){
           alert('corect');
           answeredCorrectly = true
@@ -66,7 +69,6 @@ function askMultipleQuestion(question, correctArray, attempts){
         }
     }
     alert('incorrect, you have' + (attempts - 1 ) + 'attempts');
-    if (answercorrectly == false) alert('sorry try again.');
   }
 }
 
